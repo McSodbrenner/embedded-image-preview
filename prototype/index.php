@@ -34,8 +34,6 @@ foreach ($input_config as $name => $field_config) {
 	$input[$name] = $_GET[$name];
 }
 
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,16 +44,7 @@ foreach ($input_config as $name => $field_config) {
 	<title>Embedded Image Preview (EIP)</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-	<style>
-	body { font: 14px/19px 'Roboto',Arial; background: #f3f3f3; }
-	#canvas { max-width: 640px; margin: 0 auto; background: #fff; padding: 20px; box-shadow: 5px 5px 10px rgba(0,0,0,.1); border-radius: 5px; }
-	.preview { text-align: center; margin: 20px 0; }
-	img { max-width: 100%; margin: 0 auto; border: 1px solid #ccc; }
-	.flex { display: flex; margin: 0 15px; }
-	.flex > * { flex-grow: 1; margin: 20px 5px; }
-	form { background: #f3f3f3; border-radius: 5px; }
-	form p { padding: 20px 20px 0; margin: 0; }
-	</style>
+	<link href="styles.css" rel="stylesheet">
 </head>
 <body>
 
