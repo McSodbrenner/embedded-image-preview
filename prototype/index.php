@@ -50,6 +50,9 @@ foreach ($input_config as $name => $field_config) {
 
 <div id="canvas">
 	<h1>Embedded Image Preview (EIP)</h1>
+
+<h2>Code absichern!!!!!</h2>
+
 	
 	<p>
 		This page is a prototype for the image preview technique described at<br />
@@ -65,7 +68,7 @@ foreach ($input_config as $name => $field_config) {
 
 		<form action="" method="get">
 			<p>
-				File size of full image: <?= filesize($file) ?> bytes
+				File size of full image: <?= number_format(filesize($file)) ?> bytes
 			</p>
 
 			<p>
@@ -85,7 +88,7 @@ foreach ($input_config as $name => $field_config) {
 					<select name="scan">
 						<?php foreach ($positions as $scan => $bytes) { ?>
 							<?php if ($scan === 0) continue; ?>
-							<option value="<?= $scan ?>" <?= $input['scan'] === $scan ? 'selected' : '' ?>><?= $scan .' ('. $bytes .' bytes)' ?></option>
+							<option value="<?= $scan ?>" <?= $input['scan'] === $scan ? 'selected' : '' ?>><?= $scan .' ('. number_format($bytes) .' bytes)' ?></option>
 						<?php } ?>
 					</select>
 				</label>
