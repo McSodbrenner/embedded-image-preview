@@ -1,0 +1,1 @@
+cd .. && php -S localhost:8080 _server/router.php
