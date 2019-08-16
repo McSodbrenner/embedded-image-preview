@@ -28,7 +28,7 @@ fclose($fp);
 <body>
 
 <p>
-    Simples Laden des Vorschau-Bildes als Inline-Bild
+    Loading the image up to the second DHT marker as data URI.
 </p>
 
 <img src="<?= $data_uri ?>" data-src="progressive.jpg" alt="">

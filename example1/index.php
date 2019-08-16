@@ -24,7 +24,7 @@ while ($pos = strpos($jpgdata, "\xFF\xC4", $offset)) {
 <body>
 
 <p>
-    Simples Laden des Vorschau-Bildes
+    Loading the image up to the second DHT marker.
 </p>
 
 <img data-src="progressive.jpg" data-bytes="<?= $positions[1] ?>" alt="">
