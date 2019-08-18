@@ -1,6 +1,6 @@
 <?php
 
-ini_set('display_errors', 1);
+// ini_set('display_errors', 1);
 
 $img = "progressive.jpg";
 $jpgdata = file_get_contents($img);

@@ -1,6 +1,6 @@
 <?php
 
-ini_set('display_errors', 1);
+// ini_set('display_errors', 1);
 
 $img = "progressive.jpg";
 $jpgdata = file_get_contents($img);
@@ -55,7 +55,7 @@ setTimeout(function(){
 		}
 	}
 	xhr.open('GET', $img.getAttribute('data-src'));
-	xhr.setRequestHeader("Range", "bytes="+ $img.getAttribute('data-bytes') +'-');
+	xhr.setRequestHeader("Range", "bytes="+ (parseInt($img.getAttribute('data-bytes'), 10)+1) +'-');
 	xhr.responseType = 'blob';
 	xhr.send();
 }, 2000);
