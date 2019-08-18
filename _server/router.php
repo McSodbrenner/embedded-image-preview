@@ -3,6 +3,8 @@
 ini_set('display_errors', 1);
 
 // this router adds support for HTTP Range headers to PHPs builtin server
+header('Accept-Ranges: bytes');
+
 if (isset($_SERVER['HTTP_RANGE'])) {
     if (!preg_match("~^bytes=(\d*)-(\d*)$~", $_SERVER['HTTP_RANGE'], $matches)) {
         die('Request not valid');
@@ -18,6 +20,7 @@ if (isset($_SERVER['HTTP_RANGE'])) {
         $offset_end = $filesize;
     }
     $length = $offset_end - $offset_start;
+    if ($offset_start === 0) $length++;
     
     $handle = fopen($file, 'r');
     fseek($handle, $offset_start);
