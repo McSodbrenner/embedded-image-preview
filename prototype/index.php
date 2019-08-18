@@ -142,7 +142,7 @@ foreach ($input_config as $name => $field_config) {
 
 <footer>
 	<p>
-		Created by <a href="https://twitter.com/McSodbrenner" att target="_blank">McSodbrenner</a>
+		Created by <a href="https://twitter.com/McSodbrenner" att target="_blank">Christoph Erdmann</a>
 	</p>
 </footer>
 
