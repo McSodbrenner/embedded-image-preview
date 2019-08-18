@@ -68,7 +68,7 @@ foreach ($input_config as $name => $field_config) {
 			</p>
 			
 			<p>
-				Find the source code of this example in <a href="https://github.com/McSodbrenner/embedded-image-preview" target="_blank">this GitHub repository</a>.
+				Find the source code of this example in <a href="https://github.com/McSodbrenner/embedded-image-preview" att target="_blank">this GitHub repository</a>.
 			</p>
 		</div>
 	</grid>
