@@ -57,14 +57,14 @@ foreach ($input_config as $name => $field_config) {
 	<grid>
 		<div col="1/2">
 			<p>
-				Using the Embedded Image Preview (EIP) technology presented here, we can load qualitatively different preview images from progressive JPEGs, depending on the application purpose, with the help of Ajax and HTTP Range Requests. The data from these preview images is not discarded but reused to display the entire image.
+				Using the Embedded Image Preview (EIP) technology presented here, we can load qualitatively different preview images from progressive JPEGs with the help of Ajax and HTTP Range Requests. The data from these preview images is not discarded but reused to display the entire image.
 			</p>
 		</div>
 
 		<div col="1/2">
 			<p>
 				For a complete description of how it works, please look here:
-				<a href="https://smashingmagazine.com/..." target="_blank">https://smashingmagazine.com/...</a>
+				<a href="https://www.smashingmagazine.com/2019/08/faster-image-loading-embedded-previews/" att target="_blank">Faster Image Loading With Embedded Image Previews</a>
 			</p>
 			
 			<p>
